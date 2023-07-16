@@ -117,28 +117,52 @@ main {
 }
 
 /* facts section */
-.facts-card-container{
+.facts-card-container {
     display: flex;
     justify-content: space-around;
 }
+
 .facts-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
-    font-size:2.8rem;
+    font-size: 2.8rem;
     padding: 30px 30px;
 }
-.facts-card-container .card-stats{
+
+.facts-card-container .card-stats {
     font-size: 2.8rem;
     color: #424242;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.facts-card-container .card-title{
+
+.facts-card-container .card-title {
     font-weight: 600px;
     font-size: 1.25rem;
     margin-top: 5px;
 }
+/* snopsors style */
+.sponsor{
+    text-align: center;
+}
+.sponsor-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+}
+.sponsor-img-container img{
+        width: 165px;
+}
+
+
+
+
+
+
+
 
 
 /* responsive media query of header*/
@@ -149,7 +173,9 @@ main {
     }
 
     nav,
-    .team-container {
+    .team-container,
+    .facts-card-container,
+    .sponsor-img-container {
         flex-direction: column;
     }
 
@@ -157,12 +183,16 @@ main {
         grid-template-columns: 1fr;
     }
 
-    .team-content {
+    .team-content,
+    .facts-card-container {
         padding-left: 30px;
         padding-right: 30px;
     }
+    .facts-card-container{
+        gap: 20px;
+    }
+   
 }
-
 /* tablet or medium devices */
 @media screen and (min-width: 576px) and (max-width: 960px) {
     header {
@@ -170,8 +200,10 @@ main {
     }
 
     nav,
-    .team-container {
+    .team-container,
+    .sponsor-img-container {
         flex-direction: column;
     }
+ 
 
 }
