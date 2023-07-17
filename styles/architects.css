@@ -261,6 +261,9 @@ footer {
     .facts-card-container {
         gap: 20px;
     }
+    footer{
+        max-width: fit-content;
+    }
 
 }
 
